@@ -8,7 +8,7 @@ class ProductContainer extends React.Component {
     render() { 
         return (
 			<>
-            <div className="d-flex justify-content-start">
+            <div className="d-flex justify-content-start mb-2">
 				<div className="card" >
 					<div className ="heart" >
 						<a>

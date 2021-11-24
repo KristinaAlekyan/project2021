@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Main/main.css';
 import ProductContainer from '../ProductContainer/ProductContainer';
+import WishListContainer from '../WishListContainer/WishListContainer'
 
 
 class Main extends React.Component {
@@ -10,6 +11,7 @@ class Main extends React.Component {
 				<div class = "suparmarketPhoto">
 				</div>
 				<ProductContainer/>
+				<WishListContainer/>
 			</>
         )
     }
