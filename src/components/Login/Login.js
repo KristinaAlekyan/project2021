@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../Login/login.css";
+import {connect} from "react-redux";
+import {login} from "../../redux/actions/loginAction"
 
-export default function Login() {
+
+const Login = ({login}) =>{
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -35,10 +38,12 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+        <Button block size="lg" type="submit" disabled={!validateForm()} onClick={() => login({email,password})}>
           Login
         </Button>
       </Form>
     </div>
   );
 }
+
+export default connect(null, {login})(Login);
