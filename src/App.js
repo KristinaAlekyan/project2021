@@ -14,16 +14,25 @@ class App extends  React.Component {
   constructor(props) {
     super(props);
       this.state = {
+        searchString: "" 
     };
+    this.onSearchStringChange = this.onSearchStringChange.bind(this);
+
   }
+
+  onSearchStringChange(event){
+    this.setState({searchString: event.target.value});
+  }
+
   render(){  
     return (
+      
       <Router>
-        <Header/> 
+        <Header onChange={this.onSearchStringChange} value={this.state.searchString}/> 
         
         <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route exact path="/home" element={<Main/>}/>
+          <Route path="/" element={<Main searchString={this.state.searchString}/>}/>
+          <Route exact path="/home" element={<Main searchString={this.state.searchString}/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/wish-list" element={<WishListContainer/>}/>
           <Route path="/basket" element={<BasketContainer/>}/>
