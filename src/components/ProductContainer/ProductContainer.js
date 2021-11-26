@@ -39,7 +39,7 @@ class ProductContainer extends React.Component {
 					  product_price = {product.product_price}
 					  addProduct = {this.addProduct}
 				  />
-				) : <span>NO RESULTS</span>
+				) : <span>No Results!</span>
 			  } 
 			</div>
 		  </>
