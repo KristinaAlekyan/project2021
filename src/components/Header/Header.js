@@ -22,6 +22,14 @@ class Header extends React.Component {
                             <a class="nav-link" href="/"> About </a>
                         </li>
                     </ul>
+                    
+                       <input
+                        type="text"
+                        onChange={this.props.onChange}
+                        placeholder="Search..."
+                        value={this.props.value}
+                    />
+                   
                </div>
                <div>
                     <ul class="nav">
