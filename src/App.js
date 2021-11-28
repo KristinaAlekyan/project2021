@@ -4,10 +4,11 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Login from "../src/components/Login/Login.js";
 
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WishListContainer from "./components/WishListContainer/WishListContainer";
-import BasketContainer from "./components/BasketContainer/BasktetConainer"
+import BasketContainer from "./components/BasketContainer/BasketConainer";
+import {connect} from "react-redux";
 
 
 class App extends  React.Component {
@@ -45,4 +46,4 @@ class App extends  React.Component {
   }
 }
 
-export default App;
+export default connect()(App);

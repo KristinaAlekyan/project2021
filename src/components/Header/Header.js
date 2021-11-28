@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Header/header.css';
 import armFlag from '../../images/armenia.png'
 
 class Header extends React.Component {
     render() { 
         return (
-            <div className="d-flex flex-row justify-content-between">
+            <div className="d-flex flex-row justify-content-between ">
                <div>
                     <ul class="nav">
                         <li class="nav-item">                            
@@ -21,14 +20,17 @@ class Header extends React.Component {
                         <li class="nav-item">
                             <a class="nav-link" href="/"> About </a>
                         </li>
+                        <li>
+                            <input className = "search"
+                                type="text"
+                                onChange={this.props.onChange}
+                                placeholder="Search..."
+                                value={this.props.value}
+                            />
+                        </li>
                     </ul>
                     
-                       <input
-                        type="text"
-                        onChange={this.props.onChange}
-                        placeholder="Search..."
-                        value={this.props.value}
-                    />
+                       
                    
                </div>
                <div>

@@ -11,14 +11,6 @@ class ProductContainer extends React.Component {
 		}
 	  }
 	  addProduct = (index) => {
-		  /*
-		let { data } = this.state;
-		const deletedIndex = data.findIndex(i => i.id === index);
-		this.setState({data :[
-						   ...data.slice(0, deletedIndex),
-						   ...data.slice(deletedIndex+1)
-							]});
-		*/
 	  } 
 	
 	  render() {
