@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
+
 function Footer() {
     return (
       <div className="main-footer">
@@ -19,9 +20,9 @@ function Footer() {
             <div className="col">
               <h4>INFORMATION</h4>
               <ui className="list-unstyled">
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li>FAQ's</li>
+                <li><a href = "/about"><font color = "white">About Us</font></a></li>
+                <li><a href = "/contact"><font color = "white">Contact Us</font></a></li>
+                <li><a href = "/faq"><font color = "white">FAQ's</font></a></li>
               </ui>
             </div>
 
