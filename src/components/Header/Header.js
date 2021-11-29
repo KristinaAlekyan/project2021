@@ -12,13 +12,13 @@ class Header extends React.Component {
                             <a class="nav-link active " aria-current="page" href ="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Branches</a>
+                            <a class="nav-link" href="/branches">Branches</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Career</a>
+                            <a class="nav-link" href="/career">Category</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/"> About </a>
+                            <a class="nav-link" href="/about"> About </a>
                         </li>
                         <li>
                             <input className = "search"

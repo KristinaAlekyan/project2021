@@ -10,6 +10,8 @@ import WishListContainer from "./components/WishListContainer/WishListContainer"
 import BasketContainer from "./components/BasketContainer/BasketConainer";
 import {connect} from "react-redux";
 import Register from "./components/Register/Register";
+import Branches from "../src/components/Branches/branches.js";
+import AboutUs from "./components/AboutUs/aboutUs.js";
 
 
 class App extends  React.Component {
@@ -35,6 +37,8 @@ class App extends  React.Component {
         <Routes>
           <Route path="/" element={<Main searchString={this.state.searchString}/>}/>
           <Route exact path="/home" element={<Main searchString={this.state.searchString}/>}/>
+          <Route path="/branches" element={<Branches/>}/>
+          <Route path="/about" element={<AboutUs/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/wish-list" element={<WishListContainer/>}/>
