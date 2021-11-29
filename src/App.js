@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import WishListContainer from "./components/WishListContainer/WishListContainer";
 import BasketContainer from "./components/BasketContainer/BasketConainer";
 import {connect} from "react-redux";
+import Register from "./components/Register/Register";
 
 
 class App extends  React.Component {
@@ -35,6 +36,7 @@ class App extends  React.Component {
           <Route path="/" element={<Main searchString={this.state.searchString}/>}/>
           <Route exact path="/home" element={<Main searchString={this.state.searchString}/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
           <Route path="/wish-list" element={<WishListContainer/>}/>
           <Route path="/basket" element={<BasketContainer/>}/>
         </Routes>

@@ -38,7 +38,7 @@ class Header extends React.Component {
                         <li class="nav-item ">
                             <a>
                                 <div class = "flag">
-                                    <img  src={armFlag}/>
+                                    <img  alt ="" src={armFlag}/>
                                 </div>
                             </a>
                         </li>
@@ -59,6 +59,9 @@ class Header extends React.Component {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/login"> Login </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register"> Register </a>
                         </li>
                     </ul>
                </div>
