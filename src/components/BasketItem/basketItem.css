@@ -1,11 +1,12 @@
 .cardBasket {
     display: flex;
     flex-direction: row;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 80px;
     width: 80%;
     margin-top: 3px;
-    margin-left: 3px;
+    margin-left: 20px;
     text-align: center;
     font-family: arial;    
 }
@@ -24,8 +25,8 @@
     background-color: rgb(19, 121, 206);
     text-align: center;
     cursor: pointer;
-    width: 100%;
     font-size: 14px;
+    margin-right: 10px;
 }
 
 .cardBasket button:hover {

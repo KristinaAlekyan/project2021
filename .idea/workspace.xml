@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="811d2755-457b-4228-998b-c36fa3ea0c6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/BasketContainer/BasketConainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WishListContainer/wishListContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasketContainer/BasktetConainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasketContainer/basketContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketContainer/basketContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasketItem/basketItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketItem/basketItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasketItem/basketItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketItem/basketItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductContainer/ProductContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductContainer/ProductContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WishListContainer/WishListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishListContainer/WishListContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WishListContainer/wishList.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishListContainer/wishList.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/loginAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/loginAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +70,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -67,6 +92,9 @@
       <workItem from="1637862603740" duration="9676000" />
       <workItem from="1637918459328" duration="24357000" />
       <workItem from="1637961958405" duration="2634000" />
+      <workItem from="1638127371646" duration="9911000" />
+      <workItem from="1638223097371" duration="2470000" />
+      <workItem from="1638293486720" duration="6398000" />
     </task>
     <servers />
   </component>

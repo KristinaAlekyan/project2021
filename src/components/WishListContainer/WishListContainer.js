@@ -1,6 +1,7 @@
 import React from "react";
 import WishListItem from "../WishListItem/WishListItem";
 import Data from "./wishList.json";
+import '../WishListContainer/wishListContainer.css';
 
 class WishListContainer extends React.Component {
   constructor(prop){
@@ -21,17 +22,27 @@ class WishListContainer extends React.Component {
   render() {
     return (
       <>
-        <div className="d-flex justify-content-start mb-5">
-          {this.state.data.map(product => 
-              <WishListItem 
-                  key = {product.id}
-                  id = {product.id}
-                  product_name = {product.product_name} 
-                  product_price = {product.product_price}
-                  deleteProduct = {this.deleteProduct}
-              />
-            )
-          }
+        <div className="wishList">
+          <div className="wishListTitle">
+              <h1>Wish List </h1>
+          </div>
+          <div className="wishListContainer">
+            {
+              this.state.data.length?
+              (
+                this.state.data.map(product => 
+                  <WishListItem 
+                      key = {product.id}
+                      id = {product.id}
+                      product_name = {product.product_name} 
+                      product_price = {product.product_price}
+                      deleteProduct = {this.deleteProduct}
+                  />
+              )):(<h3>Wish list is empty </h3>)
+            }
+            
+          </div>
+          
         </div>
       </>
     );

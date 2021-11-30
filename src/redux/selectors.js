@@ -1,5 +1,1 @@
-export const ADD_TO_BASKET = "ADD_TO_BASKET";
-export const DELETE_FROM_BASKET = "DELETE_FROM_BASKET";
-export const ADD_TO_WISHLIST = "ADD_TO_WISHLIST";
-export const DELETE_FROM_WISHLIST = "DELETE_FROM_WISHLIST";
-export const LOGIN = "LOGIN";
+export const getLoginState = store => store.loginHandler;

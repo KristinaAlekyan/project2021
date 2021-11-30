@@ -5,10 +5,6 @@ import ProductContainer from '../ProductContainer/ProductContainer';
 
 class Main extends React.Component {
 
-	constructor(props) {
-		super(props);
-	}
-
     render() { 
         return (
 			<>

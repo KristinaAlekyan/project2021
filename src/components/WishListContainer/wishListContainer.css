@@ -1,0 +1,15 @@
+.wishList{
+    display: flex;
+    flex-direction: column;
+}
+
+.wishListTitle{    
+    display: flex;
+    margin: auto;
+    color: rgb(19, 121, 206);;
+}
+.wishListContainer{    
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
