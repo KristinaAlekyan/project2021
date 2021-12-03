@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from 'react-hook-form';
+import "../ContactUs/contact.css"
 
 
 export default function ContactUs (){
@@ -22,7 +23,7 @@ export default function ContactUs (){
     return (
       <div className='ContactForm'>
         <div className='container'>
-          <div className='row'>
+          <div className='row1'>
             <div className='col-12 text-center'>
               <div className='contactForm'>
                 <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
