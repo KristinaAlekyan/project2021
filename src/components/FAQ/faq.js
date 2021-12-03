@@ -20,11 +20,12 @@ export default function FAQ(){
                 
                 <div class="faq-body">
                     <p>Speeding up the process. By ordering online you will you will get prices faster and you will be able to go 
-                        through order confirmation and payment process much faster. This could save days of your time.</p>
+                        through order confirmation and payment process much faster. This could save days of your time.g</p>
                 </div>
             </div>
             
             <div class="faq-three">
+                 
               
 <h1 class="faq-page">Can I cancel my order??</h1>
                
