@@ -5,7 +5,7 @@ import p1 from '../../images/1.png';
 
 class Product extends React.Component {
     render() { 
-        const {id, product_name,product_price, addProduct} = this.props;
+        const {id, product_name,product_price, addProduct, image} = this.props;
         return (          
             <div className="card" >
 					<div className ="heart" >
@@ -16,7 +16,7 @@ class Product extends React.Component {
 						</a>
 					</div>
 					<div className ="cardImage">
-						<img src = {p1} alt = "AAA"/>
+						<img src = {image} alt = "AAA"/>
 					</div>
 					<h5>{product_name}</h5>
 					<p className="price">{product_price} dr</p>

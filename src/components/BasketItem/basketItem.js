@@ -1,6 +1,5 @@
 import React from 'react';
 import '../BasketItem/basketItem.css';
-import p1 from '../../images/1.png';
 
 
 class BasketItem extends React.Component {
@@ -8,11 +7,11 @@ class BasketItem extends React.Component {
     render() { 
           
           
-        const {id, product_name,product_price, basketProductRemove} = this.props;
+        const {id, product_name,product_price, basketProductRemove, image} = this.props;
         return (          
             <div className="cardBasket" >
 					<div className ="cardBasketImage">
-						<img src = {p1} alt = "AAA"/>
+						<img src = {image} alt = "AAA"/>
 					</div>
 					<div className ="cardBasketProp">
                         <div className = "cardBasketName"> 

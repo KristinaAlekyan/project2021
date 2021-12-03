@@ -22,6 +22,7 @@ class ProductContainer extends React.Component {
 
 		return (
 		  <>
+		  
 			<div className="d-flex justify-content-start mb-5">
 			  {filteredData.length > 0 ? filteredData.map(product => 
 				  <Product 
@@ -30,6 +31,7 @@ class ProductContainer extends React.Component {
 					  product_name = {product.product_name} 
 					  product_price = {product.product_price}
 					  addProduct = {this.addProduct}
+					  image = {product.image}
 				  />
 				) : <span>No Results!</span>
 			  } 
