@@ -1,6 +1,6 @@
 import React from "react";
 import WishListItem from "../WishListItem/WishListItem";
-import Data from "./wishList.json";
+import Data from "../../Data/wishList.json";
 import '../WishListContainer/wishListContainer.css';
 import {wishListRemove} from "../../redux/action.js";
 import {connect} from 'react-redux';
