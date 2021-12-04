@@ -4,8 +4,9 @@ import Button from "react-bootstrap/Button";
 import "../Login/login.css";
 import {connect} from "react-redux";
 import {login} from "../../redux/actions/loginAction";
-import {getLoginState} from "../../redux/selectors"
+import {getLoginState} from "../../redux/selectors";
 import {LOGIN_STATES} from "../../constants";
+import {Navigate} from "react-router-dom";
 
 class Login extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Login extends React.Component {
         this.state = {email: "", password: ""};
     }
 
-        validateForm = () => {
+    validateForm = () => {
         return (this.state.email.length > 0 && this.state.password.length > 0)
     }
 
@@ -28,9 +29,15 @@ class Login extends React.Component {
         event.preventDefault();
     }
 
+
     render() {
         let email = this.state.email;
         let password = this.state.password;
+
+        if (this.props.loginState === LOGIN_STATES.FALSE)
+            alert("Incorrect email or password");
+        else if (this.props.loginState === LOGIN_STATES.TRUE)
+            return <Navigate to="/home"/>
         return (
             <div className="Login">
                 <Form onSubmit={
@@ -54,7 +61,7 @@ class Login extends React.Component {
                         />
                     </Form.Group>
                     <Button block size="lg" type="submit" disabled={!this.validateForm()}
-                            onClick = {() => this.props.login(email,password)}>
+                            onClick={() => this.props.login(email, password)}>
                         Login
                     </Button>
                 </Form>
