@@ -12,13 +12,27 @@ class Header extends React.Component {
                             <a class="nav-link active " aria-current="page" href ="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Branches</a>
+                            <a class="nav-link" href="/branches">Branches</a>
                         </li>
+
+                        {/* <li class="nav-item">
+                            <a class="nav-link" href="/category">Category</a>
+                        </li> */}
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Career</a>
+                            <div class="dropdown">
+                                <button class="dropbtn" >Category</button>
+                                <div class="dropdown-content">
+                                    <a href="/categroy/household">Household</a>
+                                    <a href="/category/personalcare">Personal Care</a>
+                                    <a href="/category/beverages">Beverages</a>
+                                    <a href="/category/groceries">Groceries</a>
+                             </div>
+</div> 
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/"> About </a>
+                            <a class="nav-link" href="/about"> About </a>
                         </li>
                         <li>
                             <input className = "search"
@@ -35,7 +49,7 @@ class Header extends React.Component {
                         <li class="nav-item ">
                             <a>
                                 <div class = "flag">
-                                    <img  src={armFlag}/>
+                                    <img  alt ="" src={armFlag}/>
                                 </div>
                             </a>
                         </li>
@@ -56,6 +70,9 @@ class Header extends React.Component {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/login"> Login </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register"> Register </a>
                         </li>
                     </ul>
                </div>

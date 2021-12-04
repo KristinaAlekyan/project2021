@@ -1,0 +1,20 @@
+.submit-btn {
+    color: white;
+    background-color: rgb(19, 121, 206);
+    letter-spacing:1px;
+    margin:10px;
+    border:0;
+  }
+
+.submit-btn:hover{
+    background-color: rgb(12, 75, 126);
+}
+.row{
+    margin:10px;
+}
+
+.contactForm{
+    margin:10px;
+    background-color: #319ace73;
+    border:1px solid #319ace73;
+}

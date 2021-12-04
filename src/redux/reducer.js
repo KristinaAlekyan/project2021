@@ -10,7 +10,7 @@ const basketReducer = (state = initialState, action) =>{
     switch (action.type) {
         case REMOVE_FROM_BASKET:            
             return {
-                ...state, 
+                ...state,
                 basketProduct: state.basketProduct.filter((i) => i.id !== action.payload.removedId )
             }
         default:
