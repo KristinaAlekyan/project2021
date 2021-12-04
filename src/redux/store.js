@@ -1,8 +1,6 @@
 import {createStore} from "redux";
-import basketReducer from "./reducer";
+import rootReducer from "./reducers"
 
 export const store = createStore(
-    basketReducer
+    rootReducer
 );
-
-

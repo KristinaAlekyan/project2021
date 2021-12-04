@@ -1,60 +1,11 @@
-//import React, {useState} from "react";
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../Login/login.css";
 import {connect} from "react-redux";
-import {login} from "../../redux/actions/loginAction"
+import {login} from "../../redux/actions/loginAction";
 import {getLoginState} from "../../redux/selectors"
-
-// const Login = ({login,loginState}) => {
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//
-//   function validateForm() {
-//     return email.length > 0 && password.length > 0;
-//   }
-//
-//   function handleSubmit(event) {
-//     event.preventDefault();
-//   }
-//
-//   function loginHander(){
-//     if(loginState === false)
-//       alert("You are not on data base");
-//     else if(loginState === true)
-//       alert("You are in");
-//   }
-//
-//
-//   return (
-//     <div className="Login">
-//       <Form onSubmit={handleSubmit}>
-//         <Form.Group size="lg" controlId="email">
-//           <Form.Label>Email</Form.Label>
-//           <Form.Control
-//             autoFocus
-//             type="email"
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//           />
-//         </Form.Group>
-//         <Form.Group size="lg" controlId="password">
-//           <Form.Label>Password</Form.Label>
-//           <Form.Control
-//             type="password"
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//           />
-//         </Form.Group>
-//         <Button block size="lg" type="submit" disabled={!validateForm()} onClick={() => login({email, password})}>
-//           Login
-//         </Button>
-//       </Form>
-//     </div>
-//   );
-// }
-
+import {LOGIN_STATES} from "../../constants";
 
 class Login extends React.Component {
     constructor(props) {
@@ -75,13 +26,6 @@ class Login extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-    }
-
-    loginHander = () => {
-        if (this.props.loginState === false)
-            alert("You are not on data base");
-        else if (this.props.loginState === true)
-            alert("You are in");
     }
 
     render() {
@@ -110,7 +54,7 @@ class Login extends React.Component {
                         />
                     </Form.Group>
                     <Button block size="lg" type="submit" disabled={!this.validateForm()}
-                            onClick={() => login({email, password})}>
+                            onClick = {() => this.props.login(email,password)}>
                         Login
                     </Button>
                 </Form>

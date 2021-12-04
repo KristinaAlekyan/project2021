@@ -1,21 +1,19 @@
-import {LOGIN} from "actionTypes";
+import {LOGIN} from "../actionTypes";
 import users from "../../Data/users.json";
+import {LOGIN_STATES} from "../../constants";
 
-const initialState = nall;
+const initialState = LOGIN_STATES.NULL;
 
 const loginHandler = (state = initialState, action) => {
     switch (action.type) {
         case LOGIN:
-            alert("reducer");
-            const user = users.filter(user => {
+            const user = users.filter(user =>
                 user.email === action.payload.email &&
                 user.password === action.payload.password
-            });
+            );
             if (user.length === 0) {
-                alert("reducer");
-                console.log("false");
-                return false;
-            } else return true;
+                return LOGIN_STATES.FALSE;
+            } else return LOGIN_STATES.TRUE;
         default:
             return state;
     }
