@@ -1,7 +1,0 @@
-[   {"id":1,"product_name":"Pennnn","product_price":"200", "category": "stationery"},
-    {"id":2,"product_name":"Bread","product_price":"200", "category": "Food"},
-    {"id":3,"product_name":"Peach","product_price":"300", "category": "Fruit"},
-    {"id":4,"product_name":"chicken meat","product_price":"2000", "category": "Meat"},
-    {"id":5,"product_name":"Bread","product_price":"500", "category": "Food"}
-]
-  

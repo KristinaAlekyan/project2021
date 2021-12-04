@@ -2,3 +2,11 @@
     border: none;
     color: red;
 }
+.heartX{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.x{
+    color: rgb(19, 121, 206);
+}

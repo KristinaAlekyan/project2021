@@ -36,6 +36,7 @@ class BasketContainer extends React.Component {
 								product_name = {product.product_name} 
 								product_price = {product.product_price}
 								basketProductRemove = {this.basketProductRemove}
+								image = {product.image}
 							/>
 							)}	
 						</div>
