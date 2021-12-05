@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Header/header.css';
 import armFlag from '../../images/armenia.png'
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() { 
@@ -23,7 +24,7 @@ class Header extends React.Component {
                             <div class="dropdown">
                                 <button class="dropbtn" >Category</button>
                                 <div class="dropdown-content">
-                                    <a href="/categroy/household">Household</a>
+                                    <Link to="/category/household">Household</Link>
                                     <a href="/category/personalcare">Personal Care</a>
                                     <a href="/category/beverages">Beverages</a>
                                     <a href="/category/groceries">Groceries</a>

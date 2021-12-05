@@ -14,6 +14,7 @@ import Branches from "../src/components/Branches/branches.js";
 import AboutUs from "./components/AboutUs/aboutUs.js";
 import FAQ from "../src/components/FAQ/faq.js";
 import ContactUs from "../src/components/ContactUs/contact.js";
+import Household from "./components/Househould/Househould";
 
 
 class App extends  React.Component {
@@ -47,6 +48,7 @@ class App extends  React.Component {
           <Route path="/basket" element={<BasketContainer/>}/>
           <Route path="/faq" element={<FAQ/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
+          <Route path="/category/household" element={<Household/>}/>
         </Routes>
         
         <Footer/>

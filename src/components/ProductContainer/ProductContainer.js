@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from '../Product/Product';
-import Data from "./product.json";
+import Data from "./grocery.json";
 
 class ProductContainer extends React.Component {
     constructor(props){
