@@ -25,6 +25,7 @@ class Header extends React.Component {
                                 <button class="dropbtn" >Category</button>
                                 <div class="dropdown-content">
                                     <Link to="/category/household">Household</Link>
+
                                     <a href="/category/personalcare">Personal Care</a>
                                     <a href="/category/beverages">Beverages</a>
                                     <a href="/category/groceries">Groceries</a>
@@ -44,6 +45,9 @@ class Header extends React.Component {
                             />
                         </li>
                     </ul>
+                    
+                       
+                   
                </div>
                <div>
                     <ul class="nav">

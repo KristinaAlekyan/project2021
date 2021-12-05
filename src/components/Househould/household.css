@@ -1,5 +1,9 @@
-household {
+.household {
     display: flex;
-    flex-direction: column; 
 };
+.householdContainer{
+    display: flex;
+    flex-direction: column;
+}
+
 

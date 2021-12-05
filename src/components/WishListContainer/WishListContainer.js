@@ -1,25 +1,17 @@
 import React from "react";
 import WishListItem from "../WishListItem/WishListItem";
-import Data from "../../Data/wishList.json";
 import '../WishListContainer/wishListContainer.css';
-import {wishListRemove} from "../../redux/action.js";
+import {wishListProductRemove} from "../../redux/action.js";
 import {connect} from 'react-redux';
 
 class WishListContainer extends React.Component {
   constructor(prop){
     super(prop)
-    this.state = {
-      data : JSON.parse(JSON.stringify(Data)),
-    }
   }
   
-  wishListProductRemove = (index) => {
-    let { data } = this.state;
-    const deletedIndex = data.findIndex(i => i.id === index);
-    this.setState({data :[
-                       ...data.slice(0, deletedIndex),
-                       ...data.slice(deletedIndex+1)
-                        ]});
+  wishListProductRemove = (id) => {
+    this.props.wishListProductRemove(id);
+
   } 
 
   render() {
@@ -31,9 +23,9 @@ class WishListContainer extends React.Component {
           </div>
           <div className="wishListContainer">
             {
-              this.state.data.length?
+              this.props.wishListProduct.length?
               (
-                this.state.data.map(product => 
+                this.props.wishListProduct.map(product => 
                   <WishListItem 
                       key = {product.id}
                       id = {product.id}
@@ -60,7 +52,7 @@ class WishListContainer extends React.Component {
   };
     
   const mapDispatchToProps = {
-    wishListRemove
+    wishListProductRemove
   };
    
   export default connect(mapStateToProps, mapDispatchToProps)(WishListContainer);

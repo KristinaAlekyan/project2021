@@ -7,7 +7,7 @@ import Login from "../src/components/Login/Login.js";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WishListContainer from "./components/WishListContainer/WishListContainer";
-import BasketContainer from "./components/BasketContainer/BasketConainer";
+import BasketContainer from "./components/BasketContainer/BasketContainer";
 import {connect} from "react-redux";
 import Register from "./components/Register/Register";
 import Branches from "../src/components/Branches/branches.js";
@@ -15,6 +15,7 @@ import AboutUs from "./components/AboutUs/aboutUs.js";
 import FAQ from "../src/components/FAQ/faq.js";
 import ContactUs from "../src/components/ContactUs/contact.js";
 import Household from "./components/Househould/Househould";
+
 
 
 class App extends  React.Component {

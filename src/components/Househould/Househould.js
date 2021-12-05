@@ -34,10 +34,9 @@ class Household extends React.Component {
 
     render() { 
         return (
-			<div>
-                {console.log("AAAAAAAAAAAAAAAAAAAAA")}
+			<div className = "householdContainer">
                 <h1>HOULSEHOLD STUFF</h1>
-                <div class="household">
+                <div className="household">
                 {houseHoldData.map(product => 
 				  <Product 
 					  key = {product.id}
