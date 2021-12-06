@@ -47,10 +47,10 @@ function Footer() {
             <div className="col">
               <h4>CATEGORY</h4>
               <ui className="list-unstyled">
-                <li>Household</li>
-                <li>Personal Care</li>
-                <li>Beverages</li>
-                <li>Groceries</li>
+                <li><a href = "/category/household"><font color = "white">Hausehold</font></a></li>
+                <li><a href = "/category/personalcare"><font color = "white">Personal Care</font></a></li>
+                <li><a href = "/category/beverages"><font color = "white">Beverages</font></a></li>
+                <li><a href = "/category/groceries"><font color = "white">Groceries</font></a></li>
               </ui>
             </div>
 
