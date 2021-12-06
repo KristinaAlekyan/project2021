@@ -2,9 +2,28 @@ import React from 'react';
 import '../Header/header.css';
 import armFlag from '../../images/armenia.png'
 import { Link } from 'react-router-dom';
+import {getLoginState} from "../../redux/selectors";
+import {connect} from "react-redux";
+import {LOGIN_STATES} from "../../constants";
+import {FaUser} from "react-icons/all"
 
 class Header extends React.Component {
-    render() { 
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        let userLogin;
+        if(this.props.loginState === LOGIN_STATES.TRUE)
+            userLogin = <div className="dropdown">
+                <button className="dropbtn"><FaUser/></button>
+                <div className="dropdown-content">
+                    <Link to="/user/history">History</Link>
+                    <a href="/user/edit">Edit</a>
+                    <a href="/user/profil">Profil</a>
+                    <a href="/user/logout">Logout</a>
+                </div>
+            </div>
+
         return (
             <div className="d-flex flex-row justify-content-between ">
                <div>
@@ -75,11 +94,19 @@ class Header extends React.Component {
                         <li class="nav-item">
                             <a class="nav-link" href="/register"> Register </a>
                         </li>
+                        <li>
+                            {userLogin}
+                        </li>
                     </ul>
                </div>
             </div>
         )
     }
 }
- 
-export default Header;
+
+const mapStateToProps = state => {
+    const loginState = getLoginState(state);
+    return {loginState};
+}
+
+export default connect(mapStateToProps)(Header);
