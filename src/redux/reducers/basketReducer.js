@@ -1,8 +1,6 @@
 import { REMOVE_FROM_BASKET, REMOVE_FROM_WISHLIST } from "../actionTypes";
 import basketData from "../../Data/basket.json";
 import wishListData from "../../Data/wishList.json";
-// import basketData from "../components/BasketContainer/basket.json";
-//import wishListData from "../components/WishListContainer/wishList.json";
 
 const initialState = {
     basketProduct: JSON.parse(JSON.stringify(basketData)),
@@ -16,10 +14,10 @@ const reducer = (state = initialState, action) =>{
                 ...state,
                 basketProduct: state.basketProduct.filter((i) => i.id !== action.payload.removedId )
             }
-        case REMOVE_FROM_WISHLIST:            
+        case REMOVE_FROM_WISHLIST:
             return {
-                ...state, 
-                wishListProduct: state.wishListProduct.filter((i) => i.id !== action.payload.removedId )                
+                ...state,
+                wishListProduct: state.wishListProduct.filter((i) => i.id !== action.payload.removedId )
             }
         default:
             return state;

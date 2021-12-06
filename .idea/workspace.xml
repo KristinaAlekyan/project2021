@@ -1,59 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="811d2755-457b-4228-998b-c36fa3ea0c6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/basket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/wishList.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bread.jpg" afterDir="false" />
+    <list default="true" id="1089b6fd-c89a-4dd8-9423-86eb6752ee45" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BasketContainer/BasketConainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketContainer/BasketConainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasketItem/basketItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketItem/basketItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasketItem/basketItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketItem/basketItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductContainer/ProductContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductContainer/ProductContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductContainer/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductContainer/product.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WishListContainer/WishListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishListContainer/WishListContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WishListContainer/wishList.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WishListItem/WishListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishListItem/WishListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WishListItem/wishListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishListItem/wishListItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/basketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/basketReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="21FHZTx6R4VHFKSJvEO4MlhRioy" />
+  <component name="ProjectId" id="21vT0Y6aj22uW4zflyJG8n8l6at" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -64,40 +27,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\VivoBook\lilit\InteliJProhects\project2021\src\Data" />
-      <recent name="C:\Users\VivoBook\lilit\InteliJProhects\project2021\src\redux" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="811d2755-457b-4228-998b-c36fa3ea0c6d" name="Changes" comment="" />
-      <created>1637529971136</created>
+      <changelist id="1089b6fd-c89a-4dd8-9423-86eb6752ee45" name="Changes" comment="" />
+      <created>1638820345084</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637529971136</updated>
-      <workItem from="1637529972734" duration="1108000" />
-      <workItem from="1637595603687" duration="9964000" />
-      <workItem from="1637670596907" duration="15947000" />
-      <workItem from="1637787749527" duration="1492000" />
-      <workItem from="1637862603740" duration="9676000" />
-      <workItem from="1637918459328" duration="24357000" />
-      <workItem from="1637961958405" duration="2634000" />
-      <workItem from="1638127371646" duration="9911000" />
-      <workItem from="1638223097371" duration="2470000" />
-      <workItem from="1638293486720" duration="6398000" />
-      <workItem from="1638553506848" duration="1640000" />
+      <updated>1638820345084</updated>
+      <workItem from="1638820347670" duration="1512000" />
     </task>
     <servers />
   </component>
