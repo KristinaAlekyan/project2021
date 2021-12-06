@@ -13,16 +13,32 @@ class Header extends React.Component {
     }
     render() {
         let userLogin;
-        if(this.props.loginState === LOGIN_STATES.TRUE)
-            userLogin = <div className="dropdown">
-                <button className="dropbtn"><FaUser/></button>
-                <div className="dropdown-content">
-                    <Link to="/user/history">History</Link>
-                    <a href="/user/edit">Edit</a>
-                    <a href="/user/profil">Profil</a>
-                    <a href="/user/logout">Logout</a>
-                </div>
-            </div>
+        let userLogOut;
+        if(this.props.loginState === LOGIN_STATES.TRUE){
+            userLogin =  <li className="nav-item">
+                            <div className="dropdown userDropdown">
+                                <button className="dropbtn"><FaUser/></button>
+                                <div className="dropdown-content">
+                                    <Link to="/user/history">History</Link>
+                                    <a href="/user/edit">Edit</a>
+                                    <a href="/user/profile">Profile</a>
+                                    <a href="/home">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+            
+        } else {
+            userLogOut = (<>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login"> Login </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register"> Register </a>
+                        </li>
+                    </>
+            )
+        }
+           
 
         return (
             <div className="d-flex flex-row justify-content-between ">
@@ -35,10 +51,6 @@ class Header extends React.Component {
                             <a class="nav-link" href="/branches">Branches</a>
                         </li>
 
-                        {/* <li class="nav-item">
-                            <a class="nav-link" href="/category">Category</a>
-                        </li> */}
-
                         <li class="nav-item">
                             <div class="dropdown">
                                 <button class="dropbtn" >Category</button>
@@ -47,8 +59,8 @@ class Header extends React.Component {
                                     <a href="/category/personalcare">Personal Care</a>
                                     <a href="/category/beverages">Beverages</a>
                                     <a href="/category/groceries">Groceries</a>
-                             </div>
-</div> 
+                                </div>
+                            </div> 
                         </li>
 
                         <li class="nav-item">
@@ -88,15 +100,8 @@ class Header extends React.Component {
 							  </svg>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login"> Login </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/register"> Register </a>
-                        </li>
-                        <li>
-                            {userLogin}
-                        </li>
+                        <>{userLogOut}</>
+                        <>{userLogin}</>
                     </ul>
                </div>
             </div>

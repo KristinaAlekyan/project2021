@@ -37,7 +37,7 @@ class Login extends React.Component {
         if (this.props.loginState === LOGIN_STATES.FALSE)
             alert("Incorrect email or password");
         else if (this.props.loginState === LOGIN_STATES.TRUE)
-            return <Navigate to="/home"/>
+            return <Navigate to="/user/profile"/>
         return (
             <div className="Login">
                 <Form onSubmit={

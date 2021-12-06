@@ -18,6 +18,8 @@ import Household from "./components/Househould/Househould";
 import PersonalCare from "./components/PersonalCare/PersonalCare";
 import Beverages from "./components/Beverages/Beverages";
 import Groceries from "./components/Groceries/Groceries";
+import Profile from "./components/Profile/Profile";
+import EditProfile from "./components/EditProfile/EditProfile";
 
 
 class App extends  React.Component {
@@ -55,6 +57,8 @@ class App extends  React.Component {
           <Route path="/category/personalcare" element={<PersonalCare/>}/>
           <Route path="/category/beverages" element={<Beverages/>}/>
           <Route path="/category/groceries" element={<Groceries/>}/>
+          <Route path="/user/profile" element={<Profile/>}/>         
+          <Route path="/user/edit" element={<EditProfile/>}/>
           
         </Routes>
         

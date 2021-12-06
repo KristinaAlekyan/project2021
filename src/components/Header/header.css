@@ -51,3 +51,10 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: rgb(108, 179, 236);} 
+
+  /* Login user*/
+
+  .userDropdown {
+    margin-right: 80px;
+    margin-left: 30px;
+  }
