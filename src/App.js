@@ -15,6 +15,9 @@ import AboutUs from "./components/AboutUs/aboutUs.js";
 import FAQ from "../src/components/FAQ/faq.js";
 import ContactUs from "../src/components/ContactUs/contact.js";
 import Household from "./components/Househould/Househould";
+import PersonalCare from "./components/PersonalCare/PersonalCare";
+import Beverages from "./components/Beverages/Beverages";
+import Groceries from "./components/Groceries/Groceries";
 
 
 class App extends  React.Component {
@@ -49,6 +52,10 @@ class App extends  React.Component {
           <Route path="/faq" element={<FAQ/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/category/household" element={<Household/>}/>
+          <Route path="/category/personalcare" element={<PersonalCare/>}/>
+          <Route path="/category/beverages" element={<Beverages/>}/>
+          <Route path="/category/groceries" element={<Groceries/>}/>
+          
         </Routes>
         
         <Footer/>

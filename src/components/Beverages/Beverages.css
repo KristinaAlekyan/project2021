@@ -1,7 +1,7 @@
-.household {
+.beverages{
     display: flex;
 };
-.householdContainer{
+.beveragesContainer{
     display: flex;
     flex-direction: column;
 }
