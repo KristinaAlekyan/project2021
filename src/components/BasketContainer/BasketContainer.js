@@ -1,6 +1,6 @@
 import React from 'react';
 import BasketItem from '../BasketItem/basketItem';
-import {basketProductRemove} from "../../redux/action.js";
+import {basketProductRemove} from "../../redux/actions/basketAction";
 import {connect} from 'react-redux';
 import '../BasketContainer/basketContainer.css';
 

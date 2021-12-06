@@ -17,7 +17,6 @@ import ContactUs from "../src/components/ContactUs/contact.js";
 import Household from "./components/Househould/Househould";
 
 
-
 class App extends  React.Component {
   constructor(props) {
     super(props);

@@ -1,7 +1,7 @@
 import React from "react";
 import WishListItem from "../WishListItem/WishListItem";
 import '../WishListContainer/wishListContainer.css';
-import {wishListProductRemove} from "../../redux/action.js";
+import {wishListProductRemove} from "../../redux/actions/wishListAction";
 import {connect} from 'react-redux';
 
 class WishListContainer extends React.Component {
