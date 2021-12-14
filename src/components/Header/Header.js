@@ -20,8 +20,8 @@ class Header extends React.Component {
                                 <button className="dropbtn"><FaUser/></button>
                                 <div className="dropdown-content">
                                     <Link to="/user/history">History</Link>
-                                    <a href="/user/edit">Edit</a>
-                                    <a href="/user/profile">Profile</a>
+                                    <Link to="/user/edit">Edit</Link>
+                                    <Link to="/user/profile">Profile</Link>
                                     <a href="/home">Logout</a>
                                 </div>
                             </div>
@@ -29,11 +29,11 @@ class Header extends React.Component {
             
         } else {
             userLogOut = (<>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login"> Login </a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/login"> Login </Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/register"> Register </a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/register"> Register </Link>
                         </li>
                     </>
             )
@@ -43,28 +43,28 @@ class Header extends React.Component {
         return (
             <div className="d-flex flex-row justify-content-between ">
                <div>
-                    <ul class="nav">
-                        <li class="nav-item">                            
-                            <a class="nav-link active " aria-current="page" href ="/home">Home</a>
+                    <ul className="nav">
+                        <li className="nav-item">                            
+                            <Link className="nav-link active " aria-current="page" to ="/home">Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/branches">Branches</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/branches">Branches</Link>
                         </li>
 
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="dropbtn" >Category</button>
-                                <div class="dropdown-content">
+                        <li className="nav-item">
+                            <div className="dropdown">
+                                <div className="dropbtn" >Category</div>
+                                <div className="dropdown-content">
                                     <Link to="/category/household">Household</Link>
-                                    <a href="/category/personalcare">Personal Care</a>
-                                    <a href="/category/beverages">Beverages</a>
-                                    <a href="/category/groceries">Groceries</a>
+                                    <Link to="/category/personalcare">Personal Care</Link>
+                                    <Link to="/category/beverages">Beverages</Link>
+                                    <Link to="/category/groceries">Groceries</Link>
                                 </div>
                             </div> 
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/about"> About </a>
+                            <Link className="nav-link" to="/about"> About </Link>
                         </li>
                         <li>
                             <input className = "search"
@@ -77,28 +77,28 @@ class Header extends React.Component {
                     </ul>
                </div>
                <div>
-                    <ul class="nav">
-                        <li class="nav-item ">
+                    <ul className="nav">
+                        <li className="nav-item ">
                             <a>
-                                <div class = "flag">
+                                <div className = "flag">
                                     <img  alt ="" src={armFlag}/>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="wish-list">
-                                <svg  width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/wish-list">
+                                <svg  width="16" height="16" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                 </svg>
-                            </a>
+                            </Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/basket">
-                            <svg  width="17" height="17" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/basket">
+                            <svg  width="17" height="17" fill="currentColor" clasName="bi bi-cart2" viewBox="0 0 16 16">
 								<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
 							  </svg>
-                            </a>
+                            </Link>
                         </li>
                         <>{userLogOut}</>
                         <>{userLogin}</>

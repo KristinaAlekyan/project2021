@@ -16,7 +16,7 @@ class ProductContainer extends React.Component {
 	  render() {
 		let filteredData = this.state.data
 		if (this.props.searchString) {
-			filteredData = filteredData.filter(element => element.product_name.includes(this.props.searchString))
+			filteredData = filteredData.filter(element => element.product_name.toLowerCase().includes(this.props.searchString.toLowerCase()))
 		}
 
 

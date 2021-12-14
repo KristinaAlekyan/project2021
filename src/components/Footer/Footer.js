@@ -3,6 +3,7 @@ import "./Footer.css";
 import phone from '../../images/phone.jpg'
 import hs from '../../images/hs.jpg'
 import build from '../../images/build.png'
+import { Link } from "react-router-dom";
 
 
 function Footer() {
@@ -37,9 +38,9 @@ function Footer() {
             <div className="col">
               <h4>INFORMATION</h4>
               <ui className="list-unstyled">
-                <li><a href = "/about"><font color = "white">About Us</font></a></li>
-                <li><a href = "/contact"><font color = "white">Contact Us</font></a></li>
-                <li><a href = "/faq"><font color = "white">FAQ's</font></a></li>
+                <li><Link to = "/about"><font color = "white">About Us</font></Link></li>
+                <li><Link to = "/contact"><font color = "white">Contact Us</font></Link></li>
+                <li><Link to = "/faq"><font color = "white">FAQ's</font></Link></li>
               </ui>
             </div>
 
@@ -47,10 +48,10 @@ function Footer() {
             <div className="col">
               <h4>CATEGORY</h4>
               <ui className="list-unstyled">
-                <li><a href = "/category/household"><font color = "white">Hausehold</font></a></li>
-                <li><a href = "/category/personalcare"><font color = "white">Personal Care</font></a></li>
-                <li><a href = "/category/beverages"><font color = "white">Beverages</font></a></li>
-                <li><a href = "/category/groceries"><font color = "white">Groceries</font></a></li>
+                <li><Link to = "/category/household"><font color = "white">Hausehold</font></Link></li>
+                <li><Link to = "/category/personalcare"><font color = "white">Personal Care</font></Link></li>
+                <li><Link to = "/category/beverages"><font color = "white">Beverages</font></Link></li>
+                <li><Link to = "/category/groceries"><font color = "white">Groceries</font></Link></li>
               </ui>
             </div>
 

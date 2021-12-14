@@ -42,6 +42,10 @@
   margin-left: 10px;
   width: 80%;
 }
+.cardBasketButtons{
+  display: flex;
+  flex-direction: row;
+}
 .cardBasketName{
   display: flex;
   width: 40%;
