@@ -1,7 +1,5 @@
 import React from 'react';
 import '../WishListItem/wishListItem.css';
-import p1 from '../../images/1.png';
-
 
 class WishListItem extends React.Component {
     render() { 
